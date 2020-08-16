@@ -1,0 +1,39 @@
+    {% extends 'base.html' %}
+
+    {% block content %}
+    <br>
+    <div class="container-fluid">
+    <div class="col-6">
+        <h5>Введите дополнительные данные <br> для создания профиля пользователя</h5>
+        <br>  
+
+        <form action="" method="post">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Имя</td>
+                        <td><input name="name" type="text" value="{{ form.name }}"></td>
+                    </tr>
+                    <tr>
+                        <td>Возраст</td>
+                        <td><input name="age" type="text" value="{{ form.age }}"></td>
+                    </tr>
+                    <tr>
+                        <td>Город</td>
+                        <td><input name="city">{{ form.city }}</input></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Отправить"></td>
+                    </tr>
+                </tbody>
+            </table>
+        {% csrf_token %}
+        </form>
+
+    </div>
+    </div>  
+    {% endblock %}
+    
+    {% block title %}
+        <title>Профиль пользователя</title>  
+    {% endblock %}

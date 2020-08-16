@@ -1,0 +1,27 @@
+
+{% extends 'base/base.html' %}
+
+{% block content %}
+<br>
+<div class="container-fluid">
+<div class="col-6">
+    <h5>Введите дополнительные данные <br> для создания профиля пользователя</h5>
+    <br>  
+    <form method="post">  
+    {% csrf_token %}
+    <table>
+		{{ form }}
+
+    </table> 
+    <br>
+    
+
+        <input type="submit" value="Создать профиль">  
+    </form>
+</div>
+</div>  
+{% endblock %}
+
+{% block title %}
+	<title>Профиль пользователя</title>  
+{% endblock %}
