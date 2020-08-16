@@ -6,7 +6,7 @@
 4. python manage.py runserver
 
 Это проект с реализацией профиля для SocialAccaunt через расширение SocialAccount.
-Минус этого подхода - сохраненные данные в extra_data стираются при следующем заходе.
+Минус этого подхода - сохраненные в extra_data данные стираются при следующем заходе.
 Не стираются в проекте https://github.com/daniltarasov/d7-homework-usermodel
 
 
